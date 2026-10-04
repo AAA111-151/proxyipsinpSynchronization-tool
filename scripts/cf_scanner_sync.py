@@ -21,7 +21,7 @@ SYNC_MAIN_DOMAIN = "NO"
 
 # 🎯 扫描与同步数量设置
 # 控制每个地区最终要同步几个 IP 到 Cloudflare DNS (默认 10 个)
-SYNC_COUNT = 100
+ALL_MODE_LIMIT = 1000
 # ==========================================
 
     # === Cloudflare IPv4 Ranges (IP段配置区) ===
