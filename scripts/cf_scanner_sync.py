@@ -12,8 +12,7 @@ from datetime import datetime, timedelta, timezone
 # 支持多个地区，用逗号隔开，例如 "SJC,LAX,HKG,FRA,NRT"
 # 💡 新手不知道有什么地区？可以直接填 "ALL"，系统会全区盲扫并自动创建所有能扫到的地区子域名！
 # ==========================================
-DEFAULT_REGIONS = "SJC,LAX,HKG,FRA,NRT"
-
+DEFAULT_REGIONS = "HKG,ICN,TPE,NRT,KIX,SIN,BKK,KUL,MNL,DEL,BOM,SYD,MEL,SJC,LAX,SEA,ORD,IAD,DFW,ATL,MIA,DEN,PHX,BOS,DTW,GRU,SCL,FRA,LHR,CDG,AMS,MAD,MXP,ARN,HEL,VIE,ZRH,WAW,JNB"
 # 🌐 主域名终极大汇总同步开关
 # 设置为 "YES": 开启！将所有扫到的极品节点汇总推送到你的主域名（全球负载均衡）
 # 设置为 "NO": 关闭！仅同步到各个地区子域名，不修改主域名的解析记录
@@ -21,7 +20,7 @@ SYNC_MAIN_DOMAIN = "NO"
 
 # 🎯 扫描与同步数量设置
 # 控制每个地区最终要同步几个 IP 到 Cloudflare DNS (默认 10 个)
-SYNC_COUNT = 100
+SYNC_COUNT = 16
 # ==========================================
 
     # === Cloudflare IPv4 Ranges (IP段配置区) ===
